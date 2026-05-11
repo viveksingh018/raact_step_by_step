@@ -1,16 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import React from 'react'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <h1>Welcome</h1>
-    </>
+    <div>
+      <Hii />
+      <Name />
+    </div>
+  )
+}
+
+function Hii() {
+  return (
+    <h1>Hii</h1>
+  )
+}
+
+function Name () {
+  return (
+    <h2>Vivek</h2>
   )
 }
 
