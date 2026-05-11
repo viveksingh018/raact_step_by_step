@@ -1,23 +1,12 @@
-import React from 'react'
-
+import Login,{Profile,Setting, userKey} from './UserLogin'
 const App = () => {
   return (
     <div>
-      <Hii />
-      <Name />
+      <Login />
+      <Profile />
+      <Setting />
+      <h1>{userKey}</h1>
     </div>
-  )
-}
-
-function Hii() {
-  return (
-    <h1>Hii</h1>
-  )
-}
-
-function Name () {
-  return (
-    <h2>Vivek</h2>
   )
 }
 
