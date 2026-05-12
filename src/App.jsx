@@ -1,18 +1,18 @@
-import React from 'react'
-function fruit(name) {
-  alert("outer function")
-}
+import { useState } from "react"
+import Counter from "./Counter.jsx"
 
 const App = () => {
 
-  // function fruit(name) {
-  //   alert("inner function")
-  // }
+  const [name, setName] = useState('Vivek')
+  const handleName = ()=> {
+    setName("Avantika");
+  }
 
   return (
     <div>
-      <button onClick={() => fruit('Apple')}>Apple</button>
-      <button onClick={() => fruit('Banana')}>Banana</button>
+      <h1>{name}</h1>
+      <button onClick={handleName}>Change name</button>
+      <Counter />
     </div>
   )
 }
