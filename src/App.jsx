@@ -1,20 +1,15 @@
+import Toggle from "./Toggle"
 import { useState } from "react"
-import Counter from "./Counter.jsx"
 
 const App = () => {
-
-  const [name, setName] = useState('Vivek')
-  const handleName = ()=> {
-    setName("Avantika");
-  }
-
+  const [display, setDisplay] = useState(true)
   return (
     <div>
-      <h1>{name}</h1>
-      <button onClick={handleName}>Change name</button>
-      <Counter />
+      <h1>Toggle in react js</h1>
+      <button onClick={() => setDisplay(!display)}>toggle</button>
+      {display? <Toggle /> : null}
     </div>
   )
 }
 
-export default App
+export default App;
